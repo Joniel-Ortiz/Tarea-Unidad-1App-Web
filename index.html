@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="index.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-nosotros">Sobre Nosotros</a>
+        <a href="#planes">Planes</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+<main>
+    <section id="inicio">
+        <h1 id="titulo">Vortex Auto Wash</h1>
+        <p id="descripcion">
+            Tu auto impecable en tiempo récord. Servicio rápido de lavado exterior, aspirado profundo y encerado hidrofóbico con productos de máxima calidad.
+        </p>
+        <div class="hero-botones">
+            <a href="#sobre-nosotros" id="agendar">Sobre Nosotros</a>
+            <a href="#planes" id="ver-materias">Conoce nuestros planes</a>
+        </div>
+    </section>
+
+    <section id="sobre-nosotros">
+        <div id="info-sobre-nosotros">
+            <h2>Sobre Nosotros</h2>
+            <h1>Cuidamos tu auto como si fuera el nuestro</h1>
+            <p>En <strong>Vortex Auto Wash</strong> transformamos el lavado convencional en una experiencia de detallado y protección profesional. Creemos que cada vehículo merece un cuidado meticuloso, libre de técnicas agresivas que dañen su acabado.</p>
+            <p>Utilizamos espumas activas con pH neutro, paños de microfibra de alta densidad y selladores hidrofóbicos que garantizan un brillo tipo espejo y una protección duradera frente a la lluvia y el polvo.</p>
+            <ul>
+                <li><strong>100% Cero Rayones:</strong> Lavado a presión y técnica de dos cubos que desprende la suciedad sin frotar arena sobre la pintura.</li>
+                <li><strong>Productos Biodegradables:</strong> Fórmulas de alta calidad amigables con el medio ambiente y seguras para los sellos de tu auto.</li>
+                <li><strong>Rapidez y Confort:</strong> Tu auto listo en el tiempo prometido mientras disfrutas de nuestra sala de espera con Wi-Fi.</li>
+            </ul>
+        </div>
+        <img src="images/Logotipo Vortex Auto Wash.png" height="650px">
+    </section>
+
+    <section id="planes">
+        <h1 id="tituloSeccion">Elige el plan de lavado ideal para ti</h1>
+        <div id="cajaPlanes">
+            <div id="plan-basico" class="card">
+                <h2 id="tituloPlan">Básico / Express</h2>
+                <p style="font-family: 'Plus Jakarta Sans'; text-align: justify;">
+                    Quienes tienen poco tiempo o lavan su auto semanalmente para quitar polvo y suciedad ligera.
+                </p>
+                <p id="precioPlan" style="margin-top: 15px; margin-bottom: 15px">5 US$</p>
+                <button id="btn-agendar">Agendar Cita</button>
+                <hr>
+                <ul>
+                    <li>Espuma activa anti-rayas</li>
+                    <li>Enjuague a alta presión</li>
+                    <li>Secado con microfibra</li>
+                    <li>Limpieza y desengrase de rines</li>
+                </ul>
+            </div>
+            <div id="plan-premium" class="card">
+                <div class="header-card">
+                    <h2 id="tituloPremium">Premium / Completo</h2>
+                    <div style="display: flex; align-items: flex-end; justify-content: flex-end;">
+                        <label id="mas-popular">Mas Popular</label>
+                    </div>
+                </div>
+
+                <p style="font-family: 'Plus Jakarta Sans'; text-align: justify;">Quienes usan su vehículo a diario y buscan una limpieza completa tanto por fuera como por dentro.</p>
+                <p id="precioPlan" style="margin-top: 15px; margin-bottom: 15px">15 US$</p>
+                <button id="btn-agendar">Agendar Cita</button>
+                <hr class="linea-separadora">
+                <ul>
+                    <li>Todo lo del Plan Express</li>
+                    <li>Aspirado profundo de interiores</li>
+                    <li>Limpieza y protección UV en tablero</li>
+                    <li>Cera líquida con brillo hidrofóbico</li>
+                    <li>Abrillantador de llantas y aroma</li>
+                </ul>
+            </div>
+            <div id="plan-vip" class="card">
+                <h2 id="tituloPlan">Detailing VIP / Diamante</h2>
+                <p style="font-family: 'Plus Jakarta Sans'; text-align: justify;">El plan Pro incluye un lavado exterior, aspirado profundo y encerado hidrofóbico con productos de máxima calidad.</p>
+                <p id="precioPlan" style="margin-top: 15px; margin-bottom: 15px">30 US$</p>
+                <button id="btn-agendar">Agendar Cita</button>
+                <hr>
+                <ul>
+                    <li>Todo lo del Plan Premium</li>
+                    <li>Descontaminado de pintura (Clay Bar)</li>
+                    <li>Sellado cerámico de alta duración</li>
+                    <li>Lavado y desmanchado de tapicería</li>
+                    <li>Desinfección de aire acondicionado</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contacto">
+        <h1 id="tituloContacto">Agenda tu Cita o Contáctanos</h1>
+        <div id="cajaContacto">
+            <form class="formulario-contacto">
+                <div class="grupo-campo">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" placeholder="Ej. Carlos Pérez" required>
+                </div>
+                <div class="grupo-campo">
+                    <label for="telefono">Teléfono / WhatsApp</label>
+                    <input type="tel" id="telefono" placeholder="Ej. +593 999 999 999" required>
+                </div>
+                <div class="grupo-campo">
+                    <label for="plan-seleccionado">Plan de lavado</label>
+                    <select id="plan-seleccionado">
+                        <option value="express">Básico / Express ($5)</option>
+                        <option value="premium" selected>Premium / Completo ($15)</option>
+                        <option value="vip">Detailing VIP / Diamante ($30)</option>
+                    </select>
+                </div>
+                <div class="grupo-campo">
+                    <label for="mensaje">Comentario o solicitud especial</label>
+                    <textarea id="mensaje" rows="3" placeholder="Modelo de auto o requerimiento..."></textarea>
+                </div>
+                <button type="submit" id="btn-enviar-contacto">Confirmar Cita</button>
+            </form>
+
+            <div class="info-contacto">
+                <h3>Visítanos</h3>
+                <p><strong>Dirección:</strong> Av. Principal y Calle 5ta (Frente al Centro Comercial)</p>
+                <p><strong>Horario:</strong> Lunes a Sábado de 8:00 AM a 6:00 PM</p>
+                <p><strong>WhatsApp directo:</strong> +593 999 999 999</p>
+                <div class="badge-garantia">
+                    <span>✓ Garantía 100% libre de rayones</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>
